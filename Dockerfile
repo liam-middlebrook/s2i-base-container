@@ -78,4 +78,5 @@ COPY bin/ /usr/bin/
 WORKDIR ${HOME}
 
 ENTRYPOINT ["container-entrypoint"]
+USER 1101
 CMD ["base-usage"]
