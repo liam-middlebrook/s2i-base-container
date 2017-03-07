@@ -79,4 +79,4 @@ WORKDIR ${HOME}
 
 ENTRYPOINT ["container-entrypoint"]
 USER 1101
-CMD ["while true; do curl -X POST -d \"color=$COLOR\" $URL/; sleep 0.25; done"]
+CMD ["bash -c \"while true; do curl -X POST -d \"color=$COLOR\" $URL/; sleep 0.25; done\""]
