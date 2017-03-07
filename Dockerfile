@@ -79,4 +79,4 @@ WORKDIR ${HOME}
 
 ENTRYPOINT ["container-entrypoint"]
 USER 1101
-CMD ['bash -c "$CMD"']
+CMD bash -c "$CMD"
